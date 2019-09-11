@@ -9,6 +9,7 @@ scalaVersion := "2.12.8"
 
 lazy val downloadFromZip = taskKey[Unit]("Download zipped extensions and extract them to ./extensions")
 
+/// Here you have to specified the extensions used the netlogo model
 downloadFromZip := {
   val baseURL = "https://raw.githubusercontent.com/NetLogo/NetLogo-Libraries/6.1/extensions/"
   val extensions = List(
